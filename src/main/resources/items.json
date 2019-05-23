@@ -1,0 +1,16 @@
+{
+  "items": [
+    {
+      "location": "0,0",
+      "use_location": "0,1",
+      "name": "Oathbringer",
+      "usage": "DEATH IS UPON"
+    },
+    {
+      "location": "0,0",
+      "use_location": "1,0",
+      "name": "Infused Sphere",
+      "usage": "LIGHT UP"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "models": [
+    {
+      "location": "0,0",
+      "story": "Welcome",
+      "direction": {
+        "north": "smth to North",
+        "south": "smth to South",
+        "east": "east sm",
+        "west": "yeahsd"
+      }
+    },
+    {
+      "location": "1,0",
+      "story": "Cmon move dammit",
+      "direction": {
+        "north": "smth to North",
+        "south": "smth to South",
+        "east": "east sm",
+        "west": "yeahsd"
+      }
+    }
+  ]
+}
