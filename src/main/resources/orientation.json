@@ -2,22 +2,92 @@
   "models": [
     {
       "location": "0,0",
-      "story": "Welcome",
+      "story": "\"Why are my hands shaking?\"\nDalinar looked down, took a sharp breath and shot his arm to the side, fingers spread - a familiar motion..\nTen heartbeats.\nOathbringer appeared in his hand.\nWith a glance to a mirror on his WEST he saw himself. White hair, bloody face, plate leaking stormlight and still gripping the blade in his hand.\n\"How could you ... you old fool.\" He sighed, memories rushing back.\n\"I have to find my men, have to help them. They must be here.\"\nHe noticed something on the mirror reflection..",
       "direction": {
-        "north": "smth to North",
-        "south": "smth to South",
-        "east": "east sm",
-        "west": "yeahsd"
+        "north": "North",
+        "south": "South",
+        "east": "East",
+        "west": "West"
       }
     },
     {
       "location": "1,0",
-      "story": "Cmon move dammit",
+      "story": "\"It's a fully Infused Sphere.\" The shiny object he saw on the mirror.\n\"I should pick this up. Never leave a good light source behind.\"\nDalinar knows he has to keep his mind occupied. Focus on surviving, focus on the next step.\n\"There seems to be a big hall to the NORTH\"",
       "direction": {
-        "north": "smth to North",
-        "south": "smth to South",
-        "east": "east sm",
-        "west": "yeahsd"
+        "north": "North",
+        "south": "South",
+        "east": "East",
+        "west": "West"
+      }
+    },
+    {
+      "location": "1,1",
+      "story": "\"I need illuminate this place.\"\nHe dropped Oathbringer as he reached for his pouch; the blade dug into the stone bellow, turning to mist. He could always call it back. It's always there." ,
+      "direction": {
+        "north": "North",
+        "south": "South",
+        "east": "East",
+        "west": "West"
+      }
+    },
+    {
+      "location": "2,1",
+      "story": "\"There is a horrible smell.\"\nHe knew that smell, been around it too often. He muttered his father's words - \"Learn when to care and when to let go.\"\nHe never did.\nHe looked around, lifting the Sphere. The hall was destroyed. The puddle was still in the middle, but as he turned back he saw the picture on the SOUTH wall. Why couldn't he try understanding them more? No, this was war, there was no time this." ,
+      "direction": {
+        "north": "North",
+        "south": "South",
+        "east": "East",
+        "west": "West"
+      }
+    },
+    {
+      "location": "1,2",
+      "story": "\"There is a horrible smell.\"\nHe knew that smell, been around it too often. He muttered his father's words - \"Learn when to care and when to let go.\"\nHe never did.\nHe looked around, lifting the Sphere. The hall was destroyed. The puddle was still in the middle, but as he turned back he saw the picture on the WEST wall. Why couldn't he try understanding them more? No, this was war, there was no time this." ,
+      "direction": {
+        "north": "North",
+        "south": "South",
+        "east": "East",
+        "west": "West"
+      }
+    },
+    {
+      "location": "2,2",
+      "story": "\"This is blood. Damn it, this puddle is blood.\"\nThe trail leads to the EAST." ,
+      "direction": {
+        "north": "North",
+        "south": "South",
+        "east": "East",
+        "west": "West"
+      }
+    },
+    {
+      "location": "3,2",
+      "story": "\"He is still breathing? Adolin, LOOK AT ME!\"\nHe can't do this anymore. \nAll of his medical training blitzed through his head. He took off his gloves and applied pressure to the wound. He couldn't save him. At least not without equipment.\nShould he leave him and search for supplies or just make it painless?" ,
+      "direction": {
+        "north": "North",
+        "south": "South",
+        "east": "East",
+        "west": "West"
+      }
+    },
+    {
+      "location": "3,1",
+      "story": "Hands still shaken and bloody, he saw the open Med-Kit on the floor, in the corner of the room. He just needs to pick it up and hurry back.",
+      "direction": {
+        "north": "North",
+        "south": "South",
+        "east": "East",
+        "west": "West"
+      }
+    },
+    {
+      "location": "3,3",
+      "story": "He looked through the window. Men dropping, screaming and a line of soldiers charging. Plates shining, spears clashing together. Dalinar stepped forward and took a sharp breath.\nTen heartbeats.",
+      "direction": {
+        "north": "North",
+        "south": "South",
+        "east": "East",
+        "west": "West"
       }
     }
   ]

@@ -13,6 +13,9 @@ public class CommandReceiver {
         startReceiving();
     }
 
+    /**
+     * Reads input from player until he types the exit command.
+     */
     private static void startReceiving() {
         String command;
         Scanner in = new Scanner(System.in);

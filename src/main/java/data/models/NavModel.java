@@ -2,6 +2,10 @@ package data.models;
 
 import com.google.gson.annotations.SerializedName;
 
+/**
+ * Contains information about the grid point.
+ * Drives the main story.
+ */
 public class NavModel {
 
     @SerializedName("location")

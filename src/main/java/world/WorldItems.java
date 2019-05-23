@@ -9,6 +9,7 @@ import util.Constants;
 import java.util.ArrayList;
 import java.util.List;
 
+/* Singleton pattern */
 public enum WorldItems {
     INSTANCE;
 
@@ -19,19 +20,14 @@ public enum WorldItems {
     }
 
 
+    /**
+     * Removes the item from the world.
+     * Adds it to the player's inventory.
+     *
+     * @param name Item name that the player requested to pick up.
+     */
     public void pickUpItem(String name) {
-
-        String strLocation = Location.CURRENT.coordinate.getX() + "," + Location.CURRENT.coordinate.getY();
-
-        ItemModel pickedUpItem = null;
-        for (ItemModel item : worldItems) {
-
-            if (strLocation.equals(item.getLocationInWorld())
-                    && name.equals(item.getName())) {
-
-                pickedUpItem = item;
-            }
-        }
+        ItemModel pickedUpItem = getPickedUpItem(name);
 
         if (pickedUpItem != null) {
             worldItems.remove(pickedUpItem);
@@ -43,12 +39,41 @@ public enum WorldItems {
         }
     }
 
+    /**
+     * Pick up item without printing to console.
+     * Used for initial setup.
+     */
+    public void silentPickUpItem(String name) {
+        ItemModel pickedUpItem = getPickedUpItem(name);
 
-    //Only for testing. TODO remove later
+        if (pickedUpItem != null) {
+            worldItems.remove(pickedUpItem);
+            Inventory.INSTANCE.putItem(pickedUpItem);
+        }
+    }
+
+    /**
+     * @param name Item name that the player requested to pick up.
+     * @return Item that is at the current location and matches the input name.
+     */
+    private ItemModel getPickedUpItem(String name) {
+
+        String strLocation = Location.CURRENT.coordinate.getX() + "," + Location.CURRENT.coordinate.getY();
+
+        for (ItemModel item : worldItems) {
+            if (strLocation.equals(item.getLocationInWorld())
+                    && name.equals(item.getName())) {
+
+                return item;
+            }
+        }
+        return null;
+    }
+
+    //Debug only
     public void printAll() {
         for (ItemModel itemModel : worldItems) {
             System.out.println(itemModel.getName());
         }
     }
-
 }

@@ -14,8 +14,9 @@ public class Constants {
     public static String WRONG_USAGE_LOC_ITEM = "Well that did nothing here..";
     public static String CANT_MOVE_THERE = "That's unreachable";
 
+    public static String OATHBRINGER = "Oathbringer";
 
-    //Means the map is 5x5
-    public static int MAP_LENGTH = 5;
+    //Means the map is 4x4
+    public static int MAP_LENGTH = 4;
     public static int NUMBER_OF_TILES = MAP_LENGTH * MAP_LENGTH;
 }

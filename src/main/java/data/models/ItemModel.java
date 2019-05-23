@@ -2,8 +2,12 @@ package data.models;
 
 import com.google.gson.annotations.SerializedName;
 
+/**
+ * Represents Item.
+ * locationInWorld is where the item can be picked up.
+ * useLocation is where the item can be used.
+ */
 public class ItemModel {
-
 
     @SerializedName("location")
     private String locationInWorld;
@@ -16,6 +20,22 @@ public class ItemModel {
 
     @SerializedName("usage")
     private String usageMessage;
+
+    public void setLocationInWorld(String locationInWorld) {
+        this.locationInWorld = locationInWorld;
+    }
+
+    public void setUseLocation(String useLocation) {
+        this.useLocation = useLocation;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setUsageMessage(String usageMessage) {
+        this.usageMessage = usageMessage;
+    }
 
     public String getUseLocation() {
         return useLocation;

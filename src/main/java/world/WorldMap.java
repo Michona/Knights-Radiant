@@ -11,13 +11,21 @@ import java.util.HashMap;
 public enum WorldMap {
     INSTANCE;
 
+    /**
+     * Maps location to NavModel.
+     * Used to give us information about the current location.
+     */
     private HashMap<String, NavModel> map = new HashMap<>();
 
-    private boolean[][] wallBlocksBitmap = new boolean[Constants.NUMBER_OF_TILES][Constants.NUMBER_OF_TILES];
+    private boolean[][] wallsMatrix = new boolean[Constants.NUMBER_OF_TILES][Constants.NUMBER_OF_TILES];
 
+    /**
+     * Sets a "wall" between 2 coordinates.
+     * Sets true in the walls matrix.
+     */
     public void setSingleWall(int coordinateId_1, int coordinateId_2) {
-        wallBlocksBitmap[coordinateId_1][coordinateId_2] = true;
-        wallBlocksBitmap[coordinateId_2][coordinateId_1] = true;
+        wallsMatrix[coordinateId_1][coordinateId_2] = true;
+        wallsMatrix[coordinateId_2][coordinateId_1] = true;
     }
 
     public void addNavModelToMap(String location, NavModel model) {
@@ -33,7 +41,6 @@ public enum WorldMap {
         return map.get(mapKey);
     }
 
-
     /**
      * Checks if the next location is a valid location
      * @param nextLocation gotten from player input (ex: gn/ge/gw/gs)
@@ -43,7 +50,7 @@ public enum WorldMap {
 
         return (nextLocation.getY() >= 0 && nextLocation.getX() >= 0)
                 && (nextLocation.getX() < Constants.MAP_LENGTH && nextLocation.getY() < Constants.MAP_LENGTH)
-                && !wallBlocksBitmap[Location.CURRENT.coordinate.getId()][nextLocation.getId()];
+                && !wallsMatrix[Location.CURRENT.coordinate.getId()][nextLocation.getId()];
     }
 }
 

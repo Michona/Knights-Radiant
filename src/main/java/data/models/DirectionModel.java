@@ -2,6 +2,9 @@ package data.models;
 
 import com.google.gson.annotations.SerializedName;
 
+/**
+ * Contains information about directions.
+ */
 public class DirectionModel {
 
     @SerializedName("north")

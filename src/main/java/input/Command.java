@@ -37,7 +37,5 @@ public enum Command {
         }
         return INPUT_ERROR;
     }
-
-
 }
 
