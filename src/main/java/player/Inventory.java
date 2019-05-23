@@ -7,12 +7,16 @@ import util.Constants;
 import java.util.ArrayList;
 import java.util.List;
 
+/* Singleton pattern */
 public enum Inventory {
     INSTANCE;
 
     public List<ItemModel> items = new ArrayList<>();
 
-
+    /**
+     * Checks if item is in the inventory and that the player is in a correct location to use it.
+     * @param name Item name that the player requested to use.
+     */
     public void useItem(String name) {
 
         boolean itemExistsInInventory = false;
@@ -40,6 +44,9 @@ public enum Inventory {
     }
 
 
+    /**
+     * Used when printing the inventory items.
+     */
     public List<String> getItemNames() {
         List<String> names = new ArrayList<>();
         items.forEach(it -> names.add(it.getName()));

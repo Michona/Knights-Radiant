@@ -1,16 +1,22 @@
 {
-  "items": [
+  "models": [
     {
       "location": "0,0",
-      "use_location": "0,1",
+      "use_location": "3,2",
       "name": "Oathbringer",
-      "usage": "DEATH IS UPON"
+      "usage": "The blade made it almost effortless. It does that. Dalinar couldn't decide if it's a curse. He closed Adolin's eyes. He looked to the NORTH. He need to go close to that window."
     },
     {
-      "location": "0,0",
-      "use_location": "1,0",
+      "location": "1,0",
+      "use_location": "1,1",
       "name": "Infused Sphere",
-      "usage": "LIGHT UP"
+      "usage": "Bright light shot from his hand.\n\"This should last\"\nWhen his eyes adjusted he saw a puddle in the middle of the hall."
+    },
+    {
+      "location": "3,1",
+      "use_location": "3,2",
+      "name": "Med-Kit",
+      "usage": "It's empty... \"I didn't check, I didn't check..\". Couple of seconds passed. He closed Adolin's eyes. He looked to the NORTH. He need to go close to that window."
     }
   ]
 }

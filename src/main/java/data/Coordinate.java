@@ -21,6 +21,9 @@ public class Coordinate {
         return y;
     }
 
+    /**
+     * @return Unique number for each grid position.
+     */
     public int getId() {
         return y * Constants.MAP_LENGTH + x;
     }
