@@ -3,6 +3,7 @@ package output;
 import data.models.ItemModel;
 import data.models.NavModel;
 import player.Inventory;
+import player.Location;
 import util.Constants;
 import world.WorldMap;
 
@@ -40,9 +41,19 @@ public class OutputManger {
         System.out.println(Constants.WRONG_USAGE_LOC_ITEM);
     }
 
+    public static void printCantMoveThere() {
+        System.out.println(Constants.CANT_MOVE_THERE);
+    }
+
 
     public static void printGenericError(String error) {
         System.out.println(error);
+    }
+
+    //Debug only
+    public static void printCurrentLocationDebugInfo() {
+        System.out.println(Location.CURRENT.coordinate.getX() + " - " + Location.CURRENT.coordinate.getY());
+        System.out.println(Location.CURRENT.coordinate.getId());
     }
 }
 

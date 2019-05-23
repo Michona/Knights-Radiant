@@ -12,4 +12,10 @@ public class Constants {
     public static String ITEM_PICKED_UP = "That should come in handy!";
 
     public static String WRONG_USAGE_LOC_ITEM = "Well that did nothing here..";
+    public static String CANT_MOVE_THERE = "That's unreachable";
+
+
+    //Means the map is 5x5
+    public static int MAP_LENGTH = 5;
+    public static int NUMBER_OF_TILES = MAP_LENGTH * MAP_LENGTH;
 }
