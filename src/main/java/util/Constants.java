@@ -15,6 +15,7 @@ public class Constants {
     public static String CANT_MOVE_THERE = "That's unreachable";
 
     public static String OATHBRINGER = "Oathbringer";
+    public static String INTRO_DECORATION = "\n\n============= Knights Radiant =============\n\n";
 
     //Means the map is 4x4
     public static int MAP_LENGTH = 4;

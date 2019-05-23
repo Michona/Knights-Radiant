@@ -50,6 +50,10 @@ public class OutputManger {
         System.out.println(error);
     }
 
+    public static void printIntro() {
+        System.out.println(Constants.INTRO_DECORATION);
+    }
+
     //Debug only
     public static void printCurrentLocationDebugInfo() {
         System.out.println(Location.CURRENT.coordinate.getX() + " - " + Location.CURRENT.coordinate.getY());
