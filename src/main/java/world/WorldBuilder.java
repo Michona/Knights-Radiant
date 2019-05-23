@@ -37,6 +37,8 @@ public class WorldBuilder {
 
     private static void addInitialItems() {
         WorldItems.INSTANCE.silentPickUpItem(Constants.OATHBRINGER);
+
+        OutputManger.printIntro();
         OutputManger.printInfoForCurrentLocation();
     }
 }
