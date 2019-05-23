@@ -1,7 +1,6 @@
 package input;
 
-import data.parser.items.ItemParser;
-import data.parser.orientation.OrientationParser;
+import world.WorldBuilder;
 
 import java.util.Scanner;
 
@@ -10,9 +9,7 @@ public class CommandReceiver {
     public static void main(String[] args) {
 
         //initial setup!
-        OrientationParser.INSTANCE.parseJson();
-        ItemParser.INSTANCE.parseJson();
-
+        WorldBuilder.start();
         startReceiving();
     }
 

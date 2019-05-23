@@ -56,5 +56,6 @@ public class CommandParser {
                 break;
         }
 
+        OutputManger.printCurrentLocationDebugInfo();
     }
 }

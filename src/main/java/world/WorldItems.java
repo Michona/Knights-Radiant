@@ -21,7 +21,7 @@ public enum WorldItems {
 
     public void pickUpItem(String name) {
 
-        String strLocation = Location.CURRENT.x + "," + Location.CURRENT.y;
+        String strLocation = Location.CURRENT.coordinate.getX() + "," + Location.CURRENT.coordinate.getY();
 
         ItemModel pickedUpItem = null;
         for (ItemModel item : worldItems) {
